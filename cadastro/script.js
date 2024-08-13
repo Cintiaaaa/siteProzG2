@@ -205,3 +205,9 @@ if(checkbox.checked) {
 } else {
     console.log("O cliente não marcou o checkbox");
 }
+
+function funcao1()
+{
+alert("Cadastro Realizado com Sucesso!");
+}
+
