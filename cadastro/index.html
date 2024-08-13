@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <header>
+            <img src="img/site proz.webp" id="logo" alt="logo"> 
+        </header>
+        <h1>Cadastro</h1>
+    </nav>
+    
+    <h2>Preencha o formulário abaixo para realizar o seu cadastro. Será rapidinho!</h2>
+
+<form id="formulário" action="Script_do_form" method="post">
+    <section>
+<fieldset>
+    <legend>Dados Pessoais</legend>
+    <table cellspacing="10">
+        <tr>
+            <td>
+                <label for="username">Nome:</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu primeiro nome" require>
+                <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
+            </td>
+            <td>
+                <label for="lastname">Sobrenome:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Digite seu sobrenome" required>
+                <p id="lastname-helper" class="helper-text">Mensagem de ajuda</p>
+            </td>
+            <tr></tr>
+            <td>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+            </td>
+        </tr> <tr>
+            <td>
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name= "celular" placeholder="(xx) xxxxx-xxxx" required> 
+                <p id="celular-helper" class="helper-text">Mensagem de ajuda</p>
+            </td>
+            <tr></tr>
+            <td>
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade">
+                <p id="idade-helper" class="helper-text">Mensagem de ajuda</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="estado civil"> Estado Civil: </label>
+                <input type="text" id="estado civil" name="estado civil">
+                <p id="estado civil-helper" class="helper-text">Mensagem de ajuda</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Gênero"> Identificação de Gênero: </label>
+            </td>
+            <td align="left">
+                <select>
+                    <optgroup label="Gênero"> 
+                        <option value="valor_item_01"> Homem Cis</option>
+                        <option value="valor_item_02"> Homem Trans</option>
+                        <option value="valor_item_03"> Mulher Cis</option>
+                        <option value="valor_item_04"> Mulher Trans</option>
+                        <option value="valor_item_05"> Travesti </option>
+                        <option value="valor_item_06"> Não Binário </option>
+                        <option value="valor_item_07"> Prefiro não divulgar</option>
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Raça"> Raça/Cor da Pele: </label>
+            </td>
+            <td align="left">
+                <select>
+                    <optgroup label="Raça"> 
+                        <option value="valor_item_01"> Asiático</option>
+                        <option value="valor_item_02"> Preto</option>
+                        <option value="valor_item_03"> Pardo</option>
+                        <option value="valor_item_04"> Indigena</option>
+                        <option value="valor_item_06"> Branco</option>
+                        <option value="valor_item_07"> Prefiro não divulgar</option>
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="orientação sexual"> Orientação Sexual: </label>
+            </td>
+            <td align="left">
+                <select>
+                    <optgroup label="Orientação Sexual"> 
+                        <option value="valor_item_01"> Heterossexual</option>
+                        <option value="valor_item_02"> Assexual</option>
+                        <option value="valor_item_03"> Bissexual</option>
+                        <option value="valor_item_04"> Gay</option>
+                        <option value="valor_item_05"> Lésbica</option>
+                        <option value="valor_item_06"> Pan</option>
+                        <option value="valor_item_07"> Direto</option>
+                        <option value="valor_item_08"> Prefiro não divulgar</option>
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+</fieldset>
+<fieldset>
+    <legend>Interesse de Contato</legend>
+    <table cellspacing="10"> 
+       <td>
+        <label for="interesse"> Que tipo de relacionamento você procura? </label>
+       </td>
+       <td align="last">
+        <select>
+            <optgroup label="Gênero"> 
+                <option value="valor_item_01"> Namoro</option>
+                <option value="valor_item_02"> Amizade</option>
+                <option value="valor_item_03"> Casamento</option>
+                <option value="valor_item_04"> Relacionamento Sério</option>
+                <td>
+                    <label for="outro"> Outro: </label>
+                </td>
+                <td>
+                    <input type="text" name="outro">
+                </td>
+            </optgroup>
+        </select>
+       </td>
+    </table>
+</fieldset>
+    <fieldset>
+        <legend>Interesses e Hobbies</legend>
+        <table cellspacing="10"> 
+            <tr>
+                <div id="hobbie">
+                <td>
+
+                    <label for="música"> Música</label>
+                </td>
+
+                <td align="lest">
+                    <input type="checkbox" name="hobbie">
+                </td>
+                <td>
+                    <label for="arte"> Arte</label>
+                </td>
+                <td align="lest">
+                    <input type="checkbox" name="hobbie">
+                </td>
+                <td>
+                    <label for="esporte"> Esporte</label>
+                </td>
+                <td align="lest">
+                    <input type="checkbox" name="hobbie">
+                </td>
+                <td>
+                    <label for="livros"> Livros</label>
+                </td>
+                <td align="lest">
+                    <input type="checkbox" name="hobbie">
+                </td>
+                <tr>
+                    <td>
+                        <label for="cinema"> Cinema</label>
+                    </td>
+                    <td align="lest">
+                        <input type="checkbox" name="hobbie">
+                    </td>
+                    <td>
+                        <label for="viagem"> Viagem</label>
+                    </td>
+                    <td align="lest">
+                        <input type="checkbox" name="hobbie">
+                    </td>
+                    <td>
+                        <label for="econimia"> Economia</label>
+                    </td>
+                    <td align="lest">
+                        <input type="checkbox" name="hobbie">
+                    </td><td>
+                        <label for="gastronomia"> Gastronomia</label>
+                    </td>
+                    <td align="lest">
+                        <input type="checkbox" name="hobbie">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="política"> Política</label>
+                    </td>
+                    <td align="lest">
+                        <input type="checkbox" name="política">
+                    </td>
+                    <td>
+                        <label for="moda"> Moda</label>
+                    </td>
+                    <td align="lest">
+                        <input type="checkbox" name="moda">
+                    </td>
+                    <td>
+                        <label for="tecnologia"> Tecnologia</label>
+                    </td>
+                    <td align="lest">
+                        <input type="checkbox" name="tecnologia">
+                    </td><td>
+                        <label for="religião"> Religião</label>
+                    </td>
+                    <td align="lest">
+                        <input type="checkbox" name="religião">
+                    </td>
+                    <tr>
+                        <td>
+                            <label for="outros"> Outros:</label>
+                        </td>
+                        <td align="lest">
+                            <input type="text" name="Outros">
+                        </td>
+                    </div>
+                    </tr>
+                </tr>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Sobre você</legend>
+        <table cellspacing="10"> 
+            <td>
+                <label for="biografia"> Uma breve biografia ou descrição sobre você:</label>
+                <input type="text" id="biografia" name="biografia" placeholder="Sobre você..." required>
+                <p id="biografia" class="helper-text">Mensagem de ajuda</p>
+            </td>
+        
+            <tr>
+                <td>
+                    <label for="foto"> Adicione aqui uma foto para seu perfil:</label>
+                </td>
+            </tr>
+            <td>
+                <a href="caminho/para/sua/imagem.jpg" download="nome_da_imagem.jpg">Baixar Imagem</a>
+            </td>
+            <tr>
+                <td>
+                    <label for="educacao"> Fale um pouco sobre sua Formação e Educação Acadêmica:</label>
+                    <input type="text" id="educacao" name="educacao" placeholder="Escreva aqui..." required>
+                    <p id="educacao" class="helper-text">Mensagem de ajuda</p>
+                </td>
+            </tr>
+            </tr>
+                <td>
+                    <label for="profissional"> Fale um pouco sobre suprofissão e histórico de trabalho:</label>
+                    <input type="text" id="profissional" name="profissional" placeholder="Escreva aqui..." required>
+                    <p id="profissional" class="helper-text">Mensagem de ajuda</p>
+                 </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Privacidade e Segurança</legend>
+        <table cellspacing="10">
+            <td>
+                <label for="privacidade"> Quem pode ver seu perfil e entrar em contato com você?</label>
+            </td>
+            <tr>
+            <td align="left">
+                <select>
+                    <optgroup label="Privacidade"> 
+                        <option value="valor_item_01"> Só quem faz parte da minha rede</option>
+                        <option value="valor_item_02"> Pessoas fora da minha rede</option>
+                        <option value="valor_item_03"> Quem tiver interesse</option>
+                    </optgroup>
+                </select>
+            </td>
+            </tr>
+            </td>
+            <tr>
+            </tr>
+            <td>
+                <label for="segurança"> Opções de validação de segurança da conta:</label>
+            </td>
+            <tr>
+                </td>
+                <td align="left">
+                    <select>
+                        <optgroup label="Segurança"> 
+                            <option value="valor_item_01"> Senha</option>
+                            <option value="valor_item_02"> Validação por email</option>
+                            <option value="valor_item_03"> Validação pelo telefone</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            </td>
+        </table>
+    </fieldset>
+<div>
+    <input type="checkbox" id="termo"><label for="termos">Declaro que li e compreendi o Aviso de Privacidade de Cadastro do Quero Amor.</label>
+</div>
+<div>
+    <button><label for="enviar"> Enviar</label></button>
+</div>
+</form>
+<footer><p>&copy; 2024 Grupo 2 do Curso Proz. Todos os direitos reservados.</p></footer>
+</body>
+</html>
