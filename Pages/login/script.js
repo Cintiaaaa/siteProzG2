@@ -41,7 +41,7 @@ function validarlogin(event) {
     const senha = document.getElementById('senha').value;
 
     if (email === emailCorreto && senha === senhaCorreta) {
-        window.location.href = './perfil.html'; // Redireciona para o perfil
+        window.location.href = '../perfil/index.html'; // Redireciona para o perfil
     } else {
         alert('Email ou senha incorreta');
     }
