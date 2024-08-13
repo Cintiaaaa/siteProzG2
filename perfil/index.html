@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu perfil</title>
   <link href="style.css" rel="stylesheet" />
+  <script src="script.js" defer></script>
 </head>
+
 <body>
   <header>
     <nav>
       <button class="hamburger" id="hamburger">&#9776;</button>
       <div id="logo"></div>
-      <label id="txbuscar" for="buscar">
-        Buscar <input id="buscar" type="text" name="buscar">
-      </label>
+      <label id="txbuscar" for="buscar">Buscar</label>
+      <input id="buscar" type="text" name="buscar">
       <p id="saudacao">Seja Bem vinda, Dominique!</p>
       <div class="dropdown">
-      <button id="perfil"></button>
+        <button id="perfil"></button>
         <div class="dropdown-child">
           <a href="">Meu perfil</a>
-          <a href="">Chat</a>
           <a href="">Segurança</a>
           <a href="">Configurações</a>
+          <a href="">Logout</a>
         </div>
       </div>
     </nav>
+
     <div class="menu" id="menu">
       <a href="" class="botao">Sobre nós</a>
-      <a href="" class="botao">Sobre o site</a>
       <a href="" class="botao">Matches</a>
       <a href="" class="botao">Perto de você</a>
       <a href="" class="botao">Ajuda</a>
@@ -36,7 +38,11 @@
       <a href="" class="botao">Trabalhe conosco</a>
     </div>
   </header>
+
+  <!-- Imagem de banner -->
   <img src="./img/Banner-Dia-Nacional-do-Idoso-e1570113390996.png" id="banner" alt="Banner">
+
+  <!-- Conteúdo principal com carrossel de perfis -->
   <div class="container">
     <div class="carrossel">
       <div class="carperfil">
@@ -59,7 +65,7 @@
       </div>
       <div class="carperfil">
         <p class="txperfil">Corlys, 65 anos</p>
-        <img src="./img/Homens experientes e estilosos _ Moda Para Homens.jpeg" alt="Perfil 2">
+        <img src="./img/Homens experientes e estilosos _ Moda Para Homens.jpeg" alt="Perfil 3">
         <div class="escolha"><span></span></div>
         <div class="botoes">
           <button class="btn-like">❤️</button>
@@ -69,6 +75,7 @@
     </div>
   </div>
 
+  <!-- Área de chat -->
   <div class="chat" id="chat">
     <div class="chat-header">
       Chat
@@ -83,7 +90,10 @@
 
   <button id="open-chat" class="open-chat">Abrir Chat</button>
 
-  <script src="script.js"></script>
-  <footer>Copyright © 1999-2024 by Grupo 2 Proz Educação</footer>
+  
+
+  <!-- Rodapé -->
 </body>
+<footer>Copyright © 1999-2024 by Grupo 2 Proz Educação</footer>
+
 </html>
