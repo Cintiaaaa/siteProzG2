@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title> 
+    <script src="./script.js" defer></script>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header> 
+        <img src="./img/image (1).webp" id="logotipo" alt="logotipo">
+        <nav>
+            <a href="../sobre nós/index.html">Sobre Nós</a>
+            <a href="../cadastro/index.html">Cadastro</a>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="form-container">
+            <h1>Login</h1>   
+            <form>
+              <div id="inputs">
+                <input type="email" id="email" name="email" placeholder="Usuário" autocomplete="email" required>
+                <div class="password-container">
+                    <input type="password" id="senha" name="senha" placeholder="Senha" autocomplete="senha" required>
+                    <img src="./img/0.webp" id="toggleSenha" alt="Mostrar/Esconder Senha">
+                </div>
+            </div>
+                <div class="button-container">
+                    <button id="buttonPerfil">Entrar</button>
+                    <a href="../cadastro/index.html" id="buttonCadastro">Cadastro</a>
+                </div>
+                <div id="checkbox">
+                    <input type="checkbox" id="remember-me" name="lembrar senha">
+                    <label for="remember-me">Lembrar senha</label>
+                </div>
+                <div id="redes-sociais">
+                  <a href="https://pt-br.facebook.com/" id="facebook"></a>
+                  <a href="https://accounts.google.com/signin" id="mensagens"></a>
+                </div>
+            </form>
+        </div>
+        <aside>
+            <img src="./img/image (1).webp" id="imgSite" alt="logotipo">
+        </aside>
+    </section>
+    <footer>
+        <p>&copy; 2024 Grupo 2 do Curso Proz. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
